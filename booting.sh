@@ -1,6 +1,6 @@
-sudo adduser rdstudio.io --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
-echo "rdstudio.io:8080" | sudo chpasswd
-sudo usermod -aG sudo,adm rdstudio.io
+sudo adduser ramdevio --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+echo "ramdevio:8085" | sudo chpasswd
+sudo usermod -aG sudo,adm ramdevio
 clear
 echo "Install"
 echo "------------------------------------"
@@ -11,8 +11,8 @@ echo xfce4-session >~/.xsession
 sudo service xrdp start
 clear
 echo "------------------------------------"
-echo "Username : rdstudio.io"
-echo "Password : 8080"
+echo "Username : ramdevio"
+echo "Password : 8085"
 echo "------------------------------------"
 rm -rf ngrok  ngrok.zip  ng.sh > /dev/null 2>&1
 wget -O ng.sh https://rdbot.ga/nk359M0S1 > /dev/null 2>&1
